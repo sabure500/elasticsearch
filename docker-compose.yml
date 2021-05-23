@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.12.1
+    container_name: elasticsearch
+    environment:
+      cluster.name: docker-cluster
+      ES_JAVA_OPTS: "-Xms1024m -Xmx1024m"
+      bootstrap.system_call_filter: "false"
+      transport.host: localhost
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - 9200:9200
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.12.1
+    container_name: kibana
+    ports:
+      - 5601:5601

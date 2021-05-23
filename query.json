@@ -1,0 +1,11 @@
+{
+  "_source": ["address", "copynumber", "@timestamp"],
+  "size": 2,
+  "query": {
+    "bool": {
+      "must": {
+        "match": { "copynumber": "111" }
+      }
+    }
+  }
+}

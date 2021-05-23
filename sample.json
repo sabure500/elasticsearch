@@ -1,0 +1,17 @@
+POST my_index/_bulk
+{ "index": {} }
+{"address":"1.2.3.4","port":"80","copynumber":"111","@timestamp":"2021-05-01T12:10:30Z"}
+{ "index": {} }
+{"address":"1.2.3.4","port":"8080","copynumber":"111","@timestamp":"2021-05-01T14:10:30Z"}
+{ "index": {} }
+{"address":"2.4.8.16","port":"80","copynumber":"111","@timestamp":"2021-05-01T14:30:30Z"}
+{ "index": {} }
+{"address":"3.4.8.16","port":"90","copynumber":"111","@timestamp":"2021-05-01T15:10:30Z"}
+{ "index": {} }
+{"address":"1.2.3.5","port":"80","copynumber":"111","@timestamp":"2021-05-01T16:10:30Z"}
+{ "index": {} }
+{"address":"1.2.3.6","port":"8080","copynumber":"222","@timestamp":"2021-05-01T16:20:30Z"}
+{ "index": {} }
+{"address":"2.4.8.111","port":"80","copynumber":"111","@timestamp":"2021-05-01T16:40:30Z"}
+{ "index": {} }
+{"address":"3.4.8.214","port":"90","copynumber":"111","@timestamp":"2021-05-01T17:10:30Z"}
